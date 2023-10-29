@@ -145,7 +145,7 @@ body {
       rgba(46, 47, 66, 0.7),
       rgba(46, 47, 66, 0.7)
     ),
-    url(../images/people-office\(1\).jpg);
+    url(../images/people-office.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-color: #2e2f42;
@@ -348,14 +348,14 @@ body {
   border-bottom: 1px solid var(--CORNFLOWER, #e7e9fc);
   border-left: 1px solid var(--CORNFLOWER, #e7e9fc);
 }
-.list.messenger {
+.portfolio-item {
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.list.messenger:hover,
-.list.messenger:focus {
+.portfolio-item:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16),
     0px 2px 1px rgba(46, 47, 66, 0.08);
+  transform: translateY(0%);
 }
 .overlay-wrapper {
   position: relative;
@@ -402,6 +402,7 @@ body {
 }
 .container-footer-text {
   margin-right: 120px;
+  margin-left: 0;
 }
 .logothype {
   font-family: Raleway, sans-serif;
@@ -427,16 +428,13 @@ body {
   width: 264px;
   margin-right: 120px;
 }
-.footer-container-messenger {
-  display: flex;
-}
+
 .messenger-footer-text {
   color: #ffffff;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.02em;
-  padding-top: 100px;
   margin-bottom: 16px;
 }
 .menu-messenger-footer {
@@ -466,9 +464,11 @@ body {
   border-radius: 50%;
   align-items: center;
   justify-content: center;
+  transition: background-color 250ms cubic-bezier
+    (0.4, 0, 0.2, 1);
 }
 .link-footer-messenger:hover,
-link-footer-messenger:focus {
+.link-footer-messenger:focus {
   background-color: #31d0aa;
 }
 /* Footer Section */
