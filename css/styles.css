@@ -442,13 +442,9 @@ body {
   margin-top: 16px;
 }
 .list-messenger-footer {
-  display: flex;
-  border-radius: 50%;
-  background-color: #4d5ae5;
   width: 40px;
   height: 40px;
   flex-shrink: 0;
-  padding: 8px;
 }
 .icon-messenger-footer {
   flex-shrink: 0;
@@ -465,8 +461,8 @@ body {
   transition: background-color 250ms cubic-bezier
     (0.4, 0, 0.2, 1);
 }
-.link-footer-messenger:hover,
-.link-footer-messenger:focus {
+.list-messenger-footer:hover .link-footer-messenger,
+.list-messenger-footer:focus .link-footer-messenger {
   background-color: #31d0aa;
 }
 /* Footer Section */
